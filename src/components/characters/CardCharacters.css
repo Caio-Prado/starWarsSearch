@@ -1,0 +1,15 @@
+.card-character {
+    background-color: #2c2c2c;
+    color: #FFF;
+    max-width: 200px;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+.card-detail {
+    padding: 10px;
+}
+
+.card-detail h2{
+    font-size: .8em;
+}
