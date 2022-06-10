@@ -7,7 +7,9 @@ export default function Header(props) {
     return (
         <div className="header">
             <img src={logostarWars} alt="logo" />
-            <input type="text" name="search"  id="search"/>
+            <form action="">
+                <input type="text" name="search"  id="search"/>
+            </form>
         </div>
     )
 }

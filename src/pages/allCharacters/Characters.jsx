@@ -1,5 +1,6 @@
 import React from 'react';
 
+import "./Characters.css"
 import CardCharacters from '../../components/characters/CardCharacters';
 
 
