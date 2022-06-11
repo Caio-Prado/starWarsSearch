@@ -22,7 +22,7 @@ export default function AllCharacters() {
 
    return (
     <div className="content">
-        {personagens.map( (personagem) => { return <CardCharacters /> } )}
+        {personagens.map( (personagem) => { return <CardCharacters key={personagem.name} personagem={personagem} /> } )}
     </div>
    );
 
