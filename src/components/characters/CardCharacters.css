@@ -1,7 +1,7 @@
 .card-character {
     background-color: #2c2c2c;
     color: #FFF;
-    width: 300px;
+    width: 25%;
     height: 300px;
     border-radius: 10px;
     margin: 15px;
@@ -14,6 +14,13 @@
 .card-detail h2{
     font-size: .8em;
 }
+
+@media screen and (max-width: 900px) {
+    .card-character {
+        width: 70%;
+    }
+  }
+
 
   
   
