@@ -5,9 +5,11 @@ import "./Characters.css"
 import CardCharacters from '../../components/characters/CardCharacters';
 
 
-export default function AllCharacters() {
+export default function Characters() {
 
     const [personagens, setPersonagens] = useState([])
+    const [loading, setLoading] = useState(false);
+    
     const urlAPI = `https://swapi.dev/api/people/?search=`
 
     useEffect( () => { load() }, [] )
@@ -25,6 +27,8 @@ export default function AllCharacters() {
     <div className="content">
         {personagens.map( (personagem) => { return <CardCharacters key={personagem.name} personagem={personagem} /> } )}
     </div>
+    
+
    );
 
 }

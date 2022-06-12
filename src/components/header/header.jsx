@@ -1,16 +1,22 @@
 import React, { useState } from 'react'
+import { withRouter } from 'react-router-dom'
+
 import logostarWars from '../../img/logoStarWars.png'
 
 import "./Header.css"
 
-export default function Header() {
+function Header(props) {
 
     const [search, setSearch] = useState("")
+
+    function buscar(e) {
+        props.history.push("/busca?search=" + search)
+    }
 
     return (
         <div className="header">
             <img src={logostarWars} alt="logo" />
-            <form action="">
+            <form onSubmit={buscar}>
                 <input 
                 type="text" 
                 name="search"  
@@ -22,3 +28,5 @@ export default function Header() {
         </div>
     )
 }
+
+export default withRouter(Header)

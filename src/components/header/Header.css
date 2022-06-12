@@ -48,5 +48,8 @@ form button:hover {
     .header {
         padding: 15px 50px 15px 30px;
     }
+     form input {
+        width: 250px;
+     }
   }
 

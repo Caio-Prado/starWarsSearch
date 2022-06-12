@@ -9,8 +9,8 @@ export default function CardCharacters({ personagem }) {
                 <div className="image"></div>
                 <div className="card-detail">
                     <h1>{personagem.name}</h1>
-                    <label>naves pilotadas</label>
-                    <h2></h2>
+                    <label>Altura</label>
+                    <p>{personagem.height}</p>
                 </div>
             </div>
         </div>
