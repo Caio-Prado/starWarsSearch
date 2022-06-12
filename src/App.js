@@ -3,7 +3,7 @@ import { BrowserRouter, Switch ,Route, NavLink } from 'react-router-dom'
 
 import './App.css';
 import Header from "./components/cabecalho/Header"
-import Busca from './pages/busca/Busca';
+import Busca from './pages/procurar/Busca';
 import Characters from './pages/allCharacters/Characters';
 
 function App() {
