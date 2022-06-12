@@ -1,7 +1,7 @@
 import React, { useEffect, useState, Fragment } from 'react';
 import axios from 'axios';
 
-import CardCharacters from '../../components/characters/CardCharacters';
+import CardCharacters from '../../components/Characters/CardCharacters';
 
 
 export default function Busca(props) {
