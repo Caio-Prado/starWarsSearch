@@ -24,7 +24,14 @@
 }
 @media screen and (max-width: 900px) {
     .card-character {
-        width: 70%;
+        width: 50%;
+        height: 200px;
+    }
+    .card-detail h1 {
+        font-size: 20px;    
+    }
+    .card-detail label {
+        font-size: 18px;
     }
   }
 
