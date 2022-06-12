@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { withRouter } from 'react-router-dom'
+import { BiSearchAlt2 } from 'react-icons/bi'
 
 import logostarWars from '../../img/logoStarWars.png'
 
@@ -23,7 +24,7 @@ function Header(props) {
                 id="search" 
                 onChange={(e) => setSearch(e.target.value)}
                 />
-                <button type="submit">procurar</button>
+                <button type="submit"><BiSearchAlt2 /></button>
             </form>
         </div>
     )
