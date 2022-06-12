@@ -8,7 +8,6 @@ import CardCharacters from '../../components/personagens/CardCharacters.jsx';
 export default function Characters() {
 
     const [personagens, setPersonagens] = useState([])
-    const [loading, setLoading] = useState(false);
     
     const urlAPI = `https://swapi.dev/api/people/?search=`
 

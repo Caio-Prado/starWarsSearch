@@ -9,7 +9,7 @@ export default function Busca(props) {
     const [personagens, setPersonagens] = useState([])
     const [loading, setloading] = useState(false)
 
-    const urlAPI = "https://swapi.dev/api/people/" + props.location.search
+    const urlAPI = `https://swapi.dev/api/people/${props.location.search}` 
 
     useEffect( () => { load() }, [props.location.search] )
 
