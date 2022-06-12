@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
 import "./Characters.css"
-import CardCharacters from '../../components/Characters/CardCharacters.jsx';
+import CardCharacters from '../../components/personagens/CardCharacters.jsx';
 
 
 export default function Characters() {

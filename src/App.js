@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Switch ,Route, NavLink } from 'react-router-dom'
 
 import './App.css';
-import Header from "./components/Header/Header"
+import Header from "./components/cabecalho/Header"
 import Busca from './pages/busca/Busca';
 import Characters from './pages/allCharacters/Characters';
 
