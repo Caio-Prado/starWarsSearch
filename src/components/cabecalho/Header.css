@@ -4,6 +4,7 @@
     padding: 15px 250px 15px 150px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 form {
@@ -49,7 +50,11 @@ form button:hover {
         padding: 15px 50px 15px 30px;
     }
      form input {
-        width: 250px;
+        width: 150px;
+     }
+
+     .logo {
+        width: 100px;
      }
   }
 

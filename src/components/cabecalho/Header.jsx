@@ -15,7 +15,7 @@ function Header(props) {
 
     return (
         <div className="header">
-            <img src={logostarWars} alt="logo" />
+            <img src={logostarWars} alt="logo" className='logo' />
             <form onSubmit={buscar}>
                 <input 
                 type="text" 
