@@ -7,6 +7,10 @@
     align-items: center;
 }
 
+.logo {
+    width: 150px;
+}
+
 form {
     display: flex;
     flex-direction: row;
