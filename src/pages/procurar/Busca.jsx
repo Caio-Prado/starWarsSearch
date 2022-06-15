@@ -1,7 +1,8 @@
 import React, { useEffect, useState, Fragment } from 'react';
 import axios from 'axios';
 
-import CardCharacters from '../../components/personagens/CardCharacters';
+import CardCharacters from '../../components/personagens/CardCharacters'
+import Loader from "../../components/loader/Loading";
 
 
 export default function Busca(props) {
@@ -15,9 +16,9 @@ export default function Busca(props) {
 
     async function load() {
         try {
-            setloading(true)
             const response = await axios.get(urlAPI)
             setPersonagens(response.data.results)
+            setloading(true)
         }catch(erro) {
             console.log(erro)
         }
@@ -28,6 +29,7 @@ export default function Busca(props) {
     <Fragment>
         <div className="content">
              {personagens.map( (personagem) => { return <CardCharacters key={personagem.name} personagem={personagem} /> } )}
+             {!loading && <Loader />}
         </div>
     </Fragment>
 
